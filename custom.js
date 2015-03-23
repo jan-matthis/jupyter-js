@@ -1,6 +1,6 @@
 /* shortcuts */
 
-$([IPython.events]).on('app_initialized.NotebookApp', function(){
+require(["base/js/events"], function (events) { events.on("notebook_loaded.Notebook", function () {
 
         // toggle notebook width
         IPython.keyboard_manager.command_shortcuts.add_shortcut("Ctrl-Shift-f", {
@@ -60,6 +60,8 @@ $([IPython.events]).on('app_initialized.NotebookApp', function(){
                 return false;
             }}
         );
+
+})
 
 });
 
