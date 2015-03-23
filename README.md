@@ -1,2 +1,3 @@
-# jupyter-js
-Custom JS for Jupyter
+# Jupyter JS
+
+Javascript bits for [Jupyter](http://jupyter.org/) profile, see comments in custom.js. 
