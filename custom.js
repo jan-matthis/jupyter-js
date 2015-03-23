@@ -27,7 +27,6 @@ require(["base/js/events"], function (events) {
                 );
         
         
-        
                 // toggle code (hide/show)
                 IPython.keyboard_manager.command_shortcuts.add_shortcut("Alt-t", {
                     help : 'Toggle code',
@@ -37,7 +36,6 @@ require(["base/js/events"], function (events) {
                         return false;
                     }}
                 );
-        
         
         
                 // clear all output
@@ -51,7 +49,6 @@ require(["base/js/events"], function (events) {
                 );
         
         
-        
                 // open qt console
                 IPython.keyboard_manager.command_shortcuts.add_shortcut("Shift-q", {
                     help : 'Open QT Console',
@@ -61,7 +58,6 @@ require(["base/js/events"], function (events) {
                         return false;
                     }}
                 );
-
         })
 });
 
