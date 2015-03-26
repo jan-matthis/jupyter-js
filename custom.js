@@ -8,9 +8,7 @@ require(["base/js/events"], function (events) {
                     help : 'Toggle container width',
                     help_index : 'zzz',
                     handler : function(e) { 
-                        
-                        //console.log('Toggle Container Width');
-        
+                
                         var currentWidth = $('.container').css('width');
                         var newWidth = '100%';
                         if(null == window.originalWidth) {
