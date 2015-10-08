@@ -4,7 +4,7 @@ require(["base/js/events"], function (events) {
         events.on("notebook_loaded.Notebook", function () {
 
                 // toggle notebook width
-                IPython.keyboard_manager.command_shortcuts.add_shortcut("Ctrl-Shift-f", {
+                Jupyter.keyboard_manager.command_shortcuts.add_shortcut("Ctrl-Shift-f", {
                     help : 'Toggle container width',
                     help_index : 'zzz',
                     handler : function(e) { 
@@ -26,7 +26,7 @@ require(["base/js/events"], function (events) {
         
         
                 // toggle code (hide/show)
-                IPython.keyboard_manager.command_shortcuts.add_shortcut("Alt-t", {
+                Jupyter.keyboard_manager.command_shortcuts.add_shortcut("Alt-t", {
                     help : 'Toggle code',
                     help_index : 'zzz',
                     handler : function(e) { 
@@ -37,22 +37,22 @@ require(["base/js/events"], function (events) {
         
         
                 // clear all output
-                IPython.keyboard_manager.command_shortcuts.add_shortcut("Ctrl-x", {
+                Jupyter.keyboard_manager.command_shortcuts.add_shortcut("Ctrl-x", {
                     help : 'Clear all output',
                     help_index : 'zzz',
                     handler : function(e) { 
-                        IPython.notebook.clear_all_output();
+                        Jupyter.notebook.clear_all_output();
                         return false;
                     }}
                 );
         
         
                 // open qt console
-                IPython.keyboard_manager.command_shortcuts.add_shortcut("Shift-q", {
+                Jupyter.keyboard_manager.command_shortcuts.add_shortcut("Shift-q", {
                     help : 'Open QT Console',
                     help_index : 'zzz',
                     handler : function(e) { 
-                        IPython.notebook.kernel.execute('%qtconsole');
+                        Jupyter.notebook.kernel.execute('%qtconsole');
                         return false;
                     }}
                 );
